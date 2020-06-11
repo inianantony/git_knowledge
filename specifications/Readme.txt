@@ -1,0 +1,1 @@
+put detailed specifications in this folder and one file per laptop model

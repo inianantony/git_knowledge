@@ -17,3 +17,7 @@ The objects folder contains the files and the folder names start with the first 
 |specifications\Readme.txt| a file to describe how to organize the files inside specification folder|
 |specifications\\*| each laptop has a file here to describe its specs|
 
+# Add to staging
+
+`git add .` or `git add laptops.txt` & `git add specifications\` to add files and folders to staging
+
