@@ -4,9 +4,10 @@ Git stores information in a map like structure with the content as the value and
 
 # Initialize Git Repo
 
-`git init` creates a new git repo locally in computer
+`> git init` creates a new git repo locally in computer
+Note : ignore the > when copying the command.
 
-The objects folder contains the files and the folder names start with the first 2 letters of SHA and inside contians the remaining SHA in the file name
+The .git\objects folder contains the files. The folder names start with the first 2 letters of SHA and inside contians the remaining SHA in the file name
 
 # Structure of Project
 
@@ -19,5 +20,9 @@ The objects folder contains the files and the folder names start with the first 
 
 # Add to staging
 
-`git add .` or `git add laptops.txt` & `git add specifications\` to add files and folders to staging
+`> git add .` or `> git add laptops.txt` & `> git add specifications\` to add files and folders to staging
 
+# Git's hierarchical storage structure
+
+`> git log --pretty=oneline` and get the firt commit hash
+`> git cat-file -p <SHA>` to see the content and details inside the object. Note : this command has run in the root folder and not inside the .git\objects folder
