@@ -156,7 +156,14 @@ when we run any git command, ask the basic question,
 - how does this command move data accross the 4 areas?
 - how does this command change the repository?
 
-# Git diff
+# Compare and move data
 
 `> git diff` command is used to compare the working area and the index
 `> git diff --cached` is used to compare the index and the repository 
+
+- Content moves from left to right 
+`> git add .` moves the working area content to index
+`> git commit -m "message"` moves data from index to repository
+
+- Content moves from right to left
+`> git checkout microsoft` git copies the files from repository and replaces with the files of repository
