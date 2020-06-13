@@ -1,3 +1,7 @@
+# Git intro
+
+Git was created by Linus Torvalds in 2005
+
 # Git Internal
 
 Git stores information in a map like structure with the content as the value and the SHA of the content as the key
@@ -22,7 +26,28 @@ The .git\objects folder contains the files. The folder names start with the firs
 
 `> git add .` or `> git add laptops.txt` & `> git add specifications\` to add files and folders to staging
 
+# Git objects
+
+- Blobs
+- Treea
+- Commits
+- Annonated Tags
+
 # Git's hierarchical storage structure
 
 `> git log --pretty=oneline` and get the firt commit hash
 `> git cat-file -p <SHA>` to see the content and details inside the object. Note : this command has run in the root folder and not inside the .git\objects folder
+
+# Storage
+
+`> git count-objects` will list the total objects in the repository and the disk space used
+
+
+# Regular tags
+
+
+# Annotated tags
+
+`> git tag -a mytag -m "This is my first tag"`
+`> git tag`
+`> git cat-file -p mytag`
