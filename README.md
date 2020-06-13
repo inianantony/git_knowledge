@@ -31,6 +31,9 @@ The .git\objects folder contains the files. The folder names start with the firs
 `> git log -1`
 prints only the last commit
 
+`> git log --oneline --graph --decorate` 
+prints logs in oneline with a graph structure and the reference information
+
 `> git log --pretty=oneline`
 prints the commits hash and comment in one line
 
@@ -226,3 +229,4 @@ Assume we have changed laptops.txt and Readme.md file and staged them. But I wan
 What if I totally dont want the change from laptops.txt file.
 ~~`> git reset --hard laptops.txt`~~ we will be tempted to use this command but it will not work, 
 insted use the `> git checkout HEAD laptops.txt` to checkout only one file from HEAD and replace the index and working are with that file.
+
