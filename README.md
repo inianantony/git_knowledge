@@ -188,3 +188,5 @@ Reset moves the current branch to other commit, and optionally copies data from 
 - `--hard` will copy files from repository to index and staging area.
 - `--mixed` will copy files from repository to the index
 - `--sodt` will only change the repository and leave the other two areas untouched.
+
+As an example, I have added Iphone 11 into the laptops.txt file, and also to the specifications folder.
