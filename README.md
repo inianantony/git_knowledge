@@ -38,6 +38,9 @@ The .git\objects folder contains the files. The folder names start with the firs
 `> git log --pretty=oneline` and get the firt commit hash
 `> git cat-file -p <SHA>` to see the content and details inside the object. Note : this command has run in the root folder and not inside the .git\objects folder
 
+![Git Commit History](https://github.com/inianantony/git_knowledge/blob/master/images/git_commit_history.png?raw=true)
+![Git Commit History Diagram](https://github.com/inianantony/git_knowledge/blob/master/images/git_commit_history_diagram.png?raw=true)
+
 # Storage
 
 `> git count-objects` will list the total objects in the repository and the disk space used
@@ -51,3 +54,7 @@ The .git\objects folder contains the files. The folder names start with the firs
 `> git tag -a mytag -m "This is my first tag"`
 `> git tag`
 `> git cat-file -p mytag`
+
+The tags are also objects linking to a commit
+
+![Tags Are also objects pointing to commit](https://github.com/inianantony/git_knowledge/blob/master/images/git_tag.png?raw=true)
