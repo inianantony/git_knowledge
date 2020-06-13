@@ -120,4 +120,4 @@ We have another branch called dell, and we have made some commits to the dell br
 
 Now we have a choice to do merge, but if we do that, then git will do create a new commit which has two parents : from master branch and from dell branch. but if we do a rebase
 `> git rebase master` from `dell` branch then git detaches the dell branch from its parent commit and moves it to the top of current master branch. The top most commit is still pointing to dell, and the place where dell attached is pointing to master.
-So if we need to move master also to the top , we can do a `> git rebase dell` or `> git merge dell` to move the master reference also to the top part, in this case git fast forwards the master branch. while in this process there is possibility of conflicts and we need to solve them if arises.
+So if we need to move master branch also to the top , we can do a `> git rebase dell` from `master` branch or `> git merge dell` to move the master reference also to the top part, in this case git fast forwards the master branch. while in this process there is possibility of conflicts and we need to solve them if arises.
