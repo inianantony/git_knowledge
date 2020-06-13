@@ -167,3 +167,14 @@ when we run any git command, ask the basic question,
 
 - Content moves from right to left
 `> git checkout microsoft` git copies the files from repository and replaces with the files of repository
+
+- Removing files from index
+`> git rm <filename> --cached` will remove the staged file from index, but preserves it in working area. so with `--cached` is the opposite of `git add`
+`> git rm <filename>` without --cached will remove the file from working area and the index
+`> rm <filename>` will remove the file from working directory if its not yet staged
+
+# moving and renamning files
+
+when you rename a file as an example, rename `laptops.txt` to `laptops.md` and do a `> git status` git will say that `laptops.txt` is deleted and `laptops.md` is new file.
+`> git add laptops.md` running this command, will add the `laptops.md` file to index and tells us that the deleted `laptops.txt` is not staged yet. ok so lets stage that as well.
+`> git add laptops.txt` this will delete the `laptops.txt` from index as well.
