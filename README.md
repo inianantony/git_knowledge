@@ -108,3 +108,16 @@ If we checkout master `> git checkout master` then HEAD will now have the ref to
 Since they have no reference to HEAD, brach or tag, it will be garbage collected after some time. If you want to prevent it, then `> git checkout <SHA>` and then create a branch name there by `> git branch tryingdetachedhead` this way there is a reference created and the commits wont we garbage collected.
 
 ![Detached Head](https://github.com/inianantony/git_knowledge/blob/master/images/git_detached_head.png?raw=true)
+
+
+# Rebasing
+
+We have another branch called dell, and we have made some commits to the dell brach. in the same way we have made some changes to master as well. the below diagram can show that.
+
+|Divergent Branches| Git Merge Situation | Git Rebase Situation |
+|-----------|------------|------------------|
+|![Divergent Commit](https://github.com/inianantony/git_knowledge/blob/master/images/git_divergent_commits.png?raw=true)| ![git_merge_situation](https://github.com/inianantony/git_knowledge/blob/master/images/git_merge_situation.png?raw=true)| ![git_rebase_situation](https://github.com/inianantony/git_knowledge/blob/master/images/git_rebase_situation.png?raw=true)|
+
+Now we have a choice to do merge, but if we do that, then git will do create a new commit which has two parents : from master branch and from dell branch. but if we do a rebase
+`> git rebase dell` from master branch then git detaches the dell branch from its parent commit and moves it to the top of current master branch and the top most commit is still pointing to dell, and the place where dell attached is pointing to master.
+So if we need to move master also to the top , we can do a `> git rebase master` or `> git merge master` to move the master reference also to the top part. while in this process there is possibility of conflicts and we need to solve them if arises.
