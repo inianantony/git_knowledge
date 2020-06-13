@@ -152,6 +152,8 @@ since we dont have write access to a branch or repo, we can make commits to our 
 - repository
 - stash
 
+The index files are tracked by the file `.git\index` file from .git folder
+
 when we run any git command, ask the basic question, 
 - how does this command move data accross the 4 areas?
 - how does this command change the repository?
@@ -208,3 +210,7 @@ The above command will move the changes to stash area , and then checkout the cu
 `> git stash apply` will retreive the data from stash and copies to working directory and index in the same state as it was before, if no name is specified then the most recent stash will be copied. If a stash name copied from `> git stash list` is given then that data wil be used.
 
 `> git stash clear` will clear eveything from stash
+
+# Git Merge
+
+If during a merge there occurs a conflict and we need to manually resolve them then there are few files created in .git folder like `MERGE_HEAD`, `MERGE_MSG`, `MERGE_MODE` to track the merge and its progress in the middle of merge. `> git status` uses these files to know we are in the middle of a merge
