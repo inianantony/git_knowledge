@@ -98,3 +98,10 @@ NOTE : The merge command does an implicit commit if there are no conflicts
 If we checkout microsoft brach and does a merge with master , then by right git has to create a new commit and merge both master and microsoft inside them. But we already have that commit and its the master. so git does a fast forward. git dont like waste
 
 ![Fast Forward](https://github.com/inianantony/git_knowledge/blob/master/images/git_fast_forward.png?raw=true)
+
+# Deteaching head from branch
+
+AS we have seen so far HEAD will contain reference to branch. but we can also keep commit's reference inside HEAD by
+
+`> git checkout <SHA>` now head is not referencing a branch, but a commit hash. If we now make more changes and commit, then the commits inside the HEAD changes. 
+If we checkout master `> git checkout master` then HEAD will now have the ref to master and not to the direct commit.
