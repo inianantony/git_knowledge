@@ -78,3 +78,5 @@ Its from the file `.git\HEAD` which points to the file inside the `refs` folder
 ![HEAD Information](https://github.com/inianantony/git_knowledge/blob/master/images/git_head_info.png?raw=true)
 
 Head will not point to any commit and only the master references to the commit. So when a new commit is made, then master moves to the new commit but HEAD will still refer to the master brach and thus inturn can get to the current commit. So HEAD has no change. 
+
+Now `> git checkout microsoft` will move the HEAD from master to `microsoft` branch and most importantly our working directory is updated with the files at the time of `microsoft` branch is made
