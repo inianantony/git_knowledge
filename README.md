@@ -105,3 +105,5 @@ AS we have seen so far HEAD will contain reference to branch. but we can also ke
 
 `> git checkout <SHA>` now head is not referencing a branch, but a commit hash. If we now make more changes and commit, then the commits inside the HEAD changes. 
 If we checkout master `> git checkout master` then HEAD will now have the ref to master and not to the direct commit.
+
+![Detached Head](https://github.com/inianantony/git_knowledge/blob/master/images/git_detached_head.png?raw=true)
