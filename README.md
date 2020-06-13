@@ -83,7 +83,7 @@ Now `> git checkout microsoft` will move the HEAD from master to `microsoft` bra
 
 # Git merge
 
-Add a new line to laptops.txt and commit the change. now checkout the master brach. 
+Add a new line to laptops.txt and commit the change. now checkout the master brach. `> git checkout master`
 
 do a `> git merge microsoft` git merges the changes and then automatically does a commit for us.
 
@@ -92,3 +92,9 @@ if we cat-file the latest commit, it has two parents.
 ![Two parents](https://github.com/inianantony/git_knowledge/blob/master/images/git_cat_file_merged_commit.png?raw=true)
 
 NOTE : The merge command does an implicit commit if there are no conflicts
+
+## Fast forward
+
+If we checkout microsoft brach and does a merge with master , then by right git has to create a new commit and merge both master and microsoft inside them. But we already have that commit and its the master. so git does a fast forward. git dont like waste
+
+![Fast Forward](https://github.com/inianantony/git_knowledge/blob/master/images/git_fast_forward.png?raw=true)
