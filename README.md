@@ -75,4 +75,4 @@ now both master and microsoft branch are pointing to the same commit ref.
 when you do `git branch` it outputs `* master` and `microsoft` and master has `*` appended to it showing that HEAD is now at master and how does git knows this information about HEAD?
 Its from the file `.git\HEAD` which points to the file inside the `refs` folder
 
-![HEAD Information](https://github.com/inianantony/git_knowledge/blob/master/images/git_head.png?raw=true)
+![HEAD Information](https://github.com/inianantony/git_knowledge/blob/master/images/git_head_info.png?raw=true)
