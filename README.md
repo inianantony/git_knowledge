@@ -196,3 +196,11 @@ What if, I have added `acer aspire 5` to the laptops.txt and staged them. Before
 `> git reset --mixed HEAD` will take the files from where head is pointing at and then overwrites the index stage so the changes are gone from index.
 What if I completely changed my mind and remove the `Acer Aspire 5` from everywhere, then 
 `> git reset --hard HEAD` will remove every change related to Acer.
+
+# Git stash
+
+I have decided to add `Lenovo ThinkPad X1 Yoga Gen 5` to the laptops folder and add a new spec desciption as well in the folder.
+while in the process I had to focus on some a new model of laptop, but I still need to preserve my change of Lenovo. I can `stash` this change
+`> git stash --include-untracked` becuase by default `stash` will ignore the untracked files and only stash the files from index.
+The above command will move the changes to stash area , and then checkout the current commit back to the working directory.
+`> git stash list` can show the list of stashes
