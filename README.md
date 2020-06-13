@@ -48,6 +48,7 @@ prints the commits hash and comment in one line
 
 ![Git Commit History](https://github.com/inianantony/git_knowledge/blob/master/images/git_commit_history.png?raw=true)
 ![Git Commit History Diagram](https://github.com/inianantony/git_knowledge/blob/master/images/git_commit_history_diagram.png?raw=true)
+The diagram from draw.io can be edited using [CommitHistory.drawio](https://github.com/inianantony/git_knowledge/blob/master/images/CommitHistory.drawio) file
 
 # Storage
 
