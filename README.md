@@ -230,3 +230,13 @@ What if I totally dont want the change from laptops.txt file.
 ~~`> git reset --hard laptops.txt`~~ we will be tempted to use this command but it will not work, 
 insted use the `> git checkout HEAD laptops.txt` to checkout only one file from HEAD and replace the index and working are with that file.
 
+# Traversing history
+
+`> git show Head` shows information of commit HEAD is pointing to
+`> git show master` shows information of the commit master is pointing to
+`> git show <SHA>` shows information of the commit
+`> git show HEAD^` shows information of the parent of HEAD
+`> git show HEAD^^` shows information of the parent of parent of HEAD
+`> git show HEAD~` & `> git show HEAD~1`shows information of the parent commit where HEAD is pointing to
+`> git show HEAD~2` shows information of the 2nd parent from HEAD
+`> git show HEAD~2^2` go to 2 commits before head and then get the information of the 2nd parent
