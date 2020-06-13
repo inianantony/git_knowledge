@@ -191,3 +191,8 @@ Reset moves the current branch to other commit, and optionally copies data from 
 
 As an example, I have added Iphone 11 into the laptops.txt file and commited it to repository. Also I have add the necessary specifiations and commited it. During code review I found that iphone 11 should not be added to laptops.txt , but now I have two commits with wrong info. SO to rollback I can get the <SHA> of the commit that didnt contain the iphone 11 changes and then do a 
 `> git reset --hard <SHA of the commit before the iphone 11 change>`
+
+What if, I have added `acer aspire 5` to the laptops.txt and staged them. Before commiting then I decided that I dont want to commit at this point and I need to add more info. So how can I unstage?
+`> git reset --mixed HEAD` will take the files from where head is pointing at and then overwrites the index stage so the changes are gone from index.
+What if I completely changed my mind and remove the `Acer Aspire 5` from everywhere, then 
+`> git reset --hard HEAD` will remove every change related to Acer.
