@@ -104,6 +104,7 @@ If we checkout microsoft brach and does a merge with master , then by right git 
 AS we have seen so far HEAD will contain reference to branch. but we can also keep commit's reference inside HEAD by
 
 `> git checkout <SHA>` now head is not referencing a branch, but a commit hash. If we now make more changes and commit, then the commits inside the HEAD changes. 
-If we checkout master `> git checkout master` then HEAD will now have the ref to master and not to the direct commit.
+If we checkout master `> git checkout master` then HEAD will now have the ref to master and not to the direct commit. So what will happen to the previous commits?
+Since they have no reference to HEAD, brach or tag, it will be garbage collected after some time. If you want to prevent it, then `> git checkout <SHA>` and then create a branch name there by `> git branch tryingdetachedhead` this way there is a reference created and the commits wont we garbage collected.
 
 ![Detached Head](https://github.com/inianantony/git_knowledge/blob/master/images/git_detached_head.png?raw=true)
