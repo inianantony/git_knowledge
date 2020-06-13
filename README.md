@@ -85,7 +85,7 @@ Now `> git checkout microsoft` will move the HEAD from master to `microsoft` bra
 
 Add a new line to laptops.txt and commit the change. now checkout the master brach. 
 
-do a `> git merge microsoft`. git merges the changes and then automatically does a commit for us.
+do a `> git merge microsoft` git merges the changes and then automatically does a commit for us.
 
 if we cat-file the latest commit, it has two parents.
 
