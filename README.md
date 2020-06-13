@@ -216,3 +216,13 @@ The above command will move the changes to stash area , and then checkout the cu
 # Git Merge
 
 If during a merge there occurs a conflict and we need to manually resolve them then there are few files created in .git folder like `MERGE_HEAD`, `MERGE_MSG`, `MERGE_MODE` to track the merge and its progress in the middle of merge. `> git status` uses these files to know we are in the middle of a merge
+
+# Remove changes from only one file
+
+Assume we have changed laptops.txt and Readme.md file and staged them. But I want only the change from Readme.md file to be persisted, but not the chnages in laptops.txt file. 
+
+`> git rest --mixed laptops.txt` will remove the laptops.txt change from index
+
+What if I totally dont want the change from laptops.txt file.
+~~`> git reset --hard laptops.txt`~~ we will be tempted to use this command but it will not work, 
+insted use the `> git checkout HEAD laptops.txt` to checkout only one file from HEAD and replace the index and working are with that file.
