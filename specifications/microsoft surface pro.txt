@@ -1,0 +1,5 @@
+CPU: 2.5GHz Intel Core i7-7660U (dual-core, 4MB cache, up to 4GHz with Turbo Boost)
+Graphics: Intel Iris Plus Graphics 640.
+RAM: 16GB LPDDR3.
+Screen: 12.3-inch, 2,736 x 1,824 PixelSense display (Contrast ratio: 1,300:1, 100% sRGB color, 10-point multi-touch, 3:2 aspect ratio)
+Storage: 512GB SSD (PCIe 3.0)
