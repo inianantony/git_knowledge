@@ -178,3 +178,5 @@ when we run any git command, ask the basic question,
 when you rename a file as an example, rename `laptops.txt` to `laptops.md` and do a `> git status` git will say that `laptops.txt` is deleted and `laptops.md` is new file.
 `> git add laptops.md` running this command, will add the `laptops.md` file to index and tells us that the deleted `laptops.txt` is not staged yet. ok so lets stage that as well.
 `> git add laptops.txt` this will delete the `laptops.txt` from index as well.
+
+`> git mv laptops.md laptops.md` command does the above operations automatically and stages them ready for commiting.
