@@ -144,3 +144,19 @@ So if we need to move master branch also to the top , we can do a `> git rebase 
 # pull request
 
 since we dont have write access to a branch or repo, we can make commits to our forked repo and then sent a pull request for the orginal owner of the project to pull from our branch or from our repo. If they review and are ok with our changes then they accept the request and the changes gets pulled to thier repo or branch
+
+# Four stages of Git repo
+
+- working area
+- index
+- repository
+- stash
+
+when we run any git command, ask the basic question, 
+- how does this command move data accross the 4 areas?
+- how does this command change the repository?
+
+# Git diff
+
+`> git diff` command is used to compare the working area and the index
+`> git diff --cached` is used to compare the index and the repository 
