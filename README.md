@@ -120,7 +120,6 @@ Since they have no reference to HEAD, brach or tag, it will be garbage collected
 
 ![Detached Head](https://github.com/inianantony/git_knowledge/blob/master/images/git_detached_head.png?raw=true)
 
-
 # Rebasing
 
 We have another branch called dell, and we have made some commits to the dell brach. in the same way we have made some changes to master as well. the below diagram can show that.
@@ -136,3 +135,7 @@ So if we need to move master branch also to the top , we can do a `> git rebase 
 # Git pull
 
 `> git pull` command has two actions behind the scene. A `> git fetch` followed by merging `master` with `origin\master` and then doing a new `commit`.
+
+# Fork
+
+`Fork` in github is similar to cloning, except that this process is done on remove provider and not on local machine.
