@@ -180,3 +180,11 @@ when you rename a file as an example, rename `laptops.txt` to `laptops.md` and d
 `> git add laptops.txt` this will delete the `laptops.txt` from index as well.
 
 `> git mv laptops.md laptops.md` command does the above operations automatically and stages them ready for commiting.
+
+# Git Reset
+
+Reset moves the current branch to other commit, and optionally copies data from repository to other areas
+
+- `--hard` will copy files from repository to index and staging area.
+- `--mixed` will copy files from repository to the index
+- `--sodt` will only change the repository and leave the other two areas untouched.
