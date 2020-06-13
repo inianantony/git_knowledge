@@ -1,0 +1,11 @@
+Brand	Lenovo
+Model	ThinkPad X1 Yoga (Gen 5)
+Release date	3rd January 2020
+Model Name	ThinkPad X1 Yoga Gen 5
+Series	ThinkPad X1
+Dimensions (mm)	218.00 x 323.00 x 15.20
+Weight (kg)	1.35
+Colours	Iron Gray
+Operating system	Windows 10
+Battery Capacity (up to hours)	18
+Battery Capacity (WHR)	51

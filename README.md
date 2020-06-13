@@ -205,6 +205,6 @@ while in the process I had to focus on some a new model of laptop, but I still n
 The above command will move the changes to stash area , and then checkout the current commit back to the working directory.
 `> git stash list` can show the list of stashes
 
-`> git stash apply` will retreive the data from stash and copies to working directory and index , if no name is specified then the most recent stash will be copied. If a stash name copied from `> git stash list` is given then that data wil be used.
+`> git stash apply` will retreive the data from stash and copies to working directory and index in the same state as it was before, if no name is specified then the most recent stash will be copied. If a stash name copied from `> git stash list` is given then that data wil be used.
 
 `> git stash clear` will clear eveything from stash
