@@ -189,4 +189,5 @@ Reset moves the current branch to other commit, and optionally copies data from 
 - `--mixed` will copy files from repository to the index
 - `--sodt` will only change the repository and leave the other two areas untouched.
 
-As an example, I have added Iphone 11 into the laptops.txt file, and also to the specifications folder.
+As an example, I have added Iphone 11 into the laptops.txt file and commited it to repository. Also I have add the necessary specifiations and commited it. During code review I found that iphone 11 should not be added to laptops.txt , but now I have two commits with wrong info. SO to rollback I can get the <SHA> of the commit that didnt contain the iphone 11 changes and then do a 
+`> git reset --hard <SHA of the commit before the iphone 11 change>`
