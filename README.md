@@ -139,3 +139,7 @@ So if we need to move master branch also to the top , we can do a `> git rebase 
 # Fork
 
 `Fork` in github is similar to cloning, except that this process is done on remove provider and not on local machine.
+
+# pull request
+
+since we dont have write access to a branch or repo, we can make commits to our forked repo and then sent a pull request for the orginal owner of the project to pull from our branch or from our repo. If they review and are ok with our changes then they accept the request and the changes gets pulled to thier repo or branch
