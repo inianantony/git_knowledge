@@ -26,6 +26,14 @@ The .git\objects folder contains the files. The folder names start with the firs
 
 `> git add .` or `> git add laptops.txt` & `> git add specifications\` to add files and folders to staging
 
+# Git log
+
+`> git log -1`
+prints only the last commit
+
+`> git log --pretty=oneline`
+prints the commits hash and comment in one line
+
 # Git objects
 
 - Blobs
@@ -47,8 +55,9 @@ The .git\objects folder contains the files. The folder names start with the firs
 
 `> tree` shows the folder structure in command line
 
-# Regular tags
+# Non Annotated tags / Lightweight tags
 
+`> git tag atag` without proving `-a` argument we create a simple tag without extra information like the data and who created it and its description.
 
 # Annotated tags
 
@@ -56,7 +65,9 @@ The .git\objects folder contains the files. The folder names start with the firs
 `> git tag`
 `> git cat-file -p mytag`
 
-The tags are also objects linking to a commit
+the `-a` option says that its annotated tags
+
+The tags are also objects linking to a commit, and it wont move , while when a new commit is made then the refs of brach moves to the new commit.
 
 ![Tags Are also objects pointing to commit](https://github.com/inianantony/git_knowledge/blob/master/images/git_tag.png?raw=true)
 
