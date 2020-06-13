@@ -65,3 +65,9 @@ The tags are also objects linking to a commit
 by defaut when we create a `git init`, git creates a master branch and stores it in `.git/refs/heads/master`. This master points to the crurrent commit hash
 
 ![Master branch](https://github.com/inianantony/git_knowledge/blob/master/images/git_master_branch.png?raw=true)
+
+# New Branch
+
+`> git branch microsoft`
+
+now both master and microsoft branch are pointing to the same commit ref
