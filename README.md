@@ -204,3 +204,7 @@ while in the process I had to focus on some a new model of laptop, but I still n
 `> git stash --include-untracked` becuase by default `stash` will ignore the untracked files and only stash the files from index.
 The above command will move the changes to stash area , and then checkout the current commit back to the working directory.
 `> git stash list` can show the list of stashes
+
+`> git stash apply` will retreive the data from stash and copies to working directory and index
+
+`> git stash clear` will clear eveything from stash
