@@ -45,6 +45,7 @@ The .git\objects folder contains the files. The folder names start with the firs
 
 `> git count-objects` will list the total objects in the repository and the disk space used
 
+`> tree` shows the folder structure in command line
 
 # Regular tags
 
@@ -58,3 +59,9 @@ The .git\objects folder contains the files. The folder names start with the firs
 The tags are also objects linking to a commit
 
 ![Tags Are also objects pointing to commit](https://github.com/inianantony/git_knowledge/blob/master/images/git_tag.png?raw=true)
+
+# Master branch
+
+by defaut when we create a `git init`, git creates a master branch and stores it in `.git/refs/heads/master`. This master points to the crurrent commit hash
+
+![Master branch](https://github.com/inianantony/git_knowledge/blob/master/images/git_master_branch.png?raw=true)
