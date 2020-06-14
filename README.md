@@ -321,3 +321,8 @@ I can get the deleted commits information of `996643b` by `> git show 996643b` o
 # Git revert
 
 `> git revert <SHA>` is to revert the change made by the commit with the exact opposite of the that commit and then automatically commits this reverted commit to the repository. It doesn't remove the commit but add a new commit reverting the changes of the old commit so the history is still preserved.
+
+
+# A Bare Repo
+
+A bare repo is where it only has the repository and not the index and working area. It is used only for distribution, and no developes will work on bare repo.
