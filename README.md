@@ -267,8 +267,25 @@ I want to add `macbook air` into the laptops list, so I added it and commited it
 
 # Fixing History
 
+Its always a golden rule to only fix history for the commits that are not pushed to shared repository
+
 Step 1 : Add a dummy line `dummy line` to the readme file
 Step 2 : Add a new line to be commited
 Step 3 : Oen interactive rebase
 `> git rebase -i`
 
+Git will open up the inteactive commands for us, so we can change the commands fot it to run
+
+| Original | Changed|
+|----------|---------|
+|pick 6f2a7e7 fixing history|pick 6f2a7e7 fixing history|
+|pick 80f67a6 add extta line|squash 80f67a6 add extta line|
+|pick dc7f83c open an interactive rebase|pick dc7f83c open an interactive rebase|
+|pick 996643b add dummy line|drop 996643b add dummy line|
+
+From all the pick commands I decided to pick the `fixing history` commit, and squash `add extta line` commit with `fixing history` commit, and then pick the `open an interactive rebase` commit and totally drop the `add dummy line` commit.
+so the end result will be
+
+cf87bbc (HEAD -> master) open an interactive rebase
+8e2a358 fixing history
+8ce7033 (origin/master, origin/HEAD) use bold to signify
