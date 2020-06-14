@@ -326,3 +326,9 @@ I can get the deleted commits information of `996643b` by `> git show 996643b` o
 # A Bare Repo
 
 A bare repo is where it only has the repository and not the index and working area. It is used only for distribution, and no developes will work on bare repo.
+
+# Distribution models
+
+- Peer to Peer model
+- Centralized model
+- Pull Request model
