@@ -318,3 +318,6 @@ I can get the deleted commits information of `996643b` by `> git show 996643b` o
 
 `> git reflog refs/heads/master` tracks all the changes happened to the master branch
 
+# Git revert
+
+`> git revert <SHA>` is to revert the change made by the commit with the exact opposite of the that commit and then automatically commits this reverted commit to the repository
