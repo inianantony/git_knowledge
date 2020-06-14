@@ -265,3 +265,8 @@ I want to add `macbook air` into the laptops list, so I added it and commited it
 
 `> git commit --amend`
 
+# Fixing History
+
+Step 1 : Add a dummy line `dummy line` to the readme file
+Step 2 : Add a new line to be commited
+
