@@ -332,3 +332,10 @@ A bare repo is where it only has the repository and not the index and working ar
 - Peer to Peer model
 - Centralized model
 - Pull Request model
+- Dictator and Lieutenants model ( for big projects with main and sub projects)
+
+# Git cherry-pick
+
+cherry pick to to pick one commit for few commits from one branch and apply it on top of another branch.
+`> git checkout master`
+`> git cherry-pick <SHA>`
