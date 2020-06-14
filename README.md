@@ -94,3 +94,5 @@ if we cat-file the latest commit, it has two parents.
 # Git revert
 
 `> git revert <SHA>` is to revert the change made by the commit with the exact opposite of the that commit and then automatically commits this reverted commit to the repository
+
+this is a dummy line
