@@ -49,8 +49,11 @@ Used to filter the git commits based on comments that contain the word git, and 
 `> git log -GMac --patch`
 Used to show all the commits that added or removed the word Mac in the any file. The `-G` option is used to specify that and `--patch` is used to show the changes made in that commit in which lines
 
-`> git log HEAD~5..HEAD --oneline`
+`> git log HEAD~5..HEAD^ --oneline`
 Used to show the commits from 5 commits before head to the HEAD. the two dots `..` is used to specify the range
+
+`> git log dell..master --oneline`
+Used to compare between branches. In the example show the commits that are not in dell but are in master branch. So if we merge master into dell branch then all those commits will be get merged
 
 # Git objects
 
