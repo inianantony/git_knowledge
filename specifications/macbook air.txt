@@ -1,0 +1,6 @@
+CPU: 1.6GHz Intel Core i5-8210Y (dual-core, 4 threads, 4MB cache, up to 3.6GHz)
+Graphics: Intel UHD Graphics 617.
+RAM: 8GB (2,133MHz LPDDR3)
+Screen: 13.3-inch, 2,560 x 1,600 Retina True Tone display (backlit LED, IPS)
+Storage: 256GB PCIe SSD.
+Ports: 2x Thunderbolt 3 (USB-C), 3.5mm headphone jack.
