@@ -31,11 +31,26 @@ The .git\objects folder contains the files. The folder names start with the firs
 `> git log -1`
 prints only the last commit
 
+`> git log -n`
+prints only the last n commits
+
 `> git log --oneline --graph --decorate` 
 prints logs in oneline with a graph structure and the reference information
 
 `> git log --pretty=oneline`
 prints the commits hash and comment in one line
+
+`> git log --patch` 
+Used to show the commit history with the changes introduced in each commit in which lines
+
+`> git log --grep git --oneline`
+Used to filter the git commits based on comments that contain the word git, and print the results in oneline
+
+`> git log -GMac --patch`
+Used to show all the commits that added or removed the word Mac in the any file. The `-G` option is used to specify that and `--patch` is used to show the changes made in that commit in which lines
+
+`> git log HEAD~5..HEAD --oneline`
+Used to show the commits from 5 commits before head to the HEAD. the two dots `..` is used to specify the range
 
 # Git objects
 
