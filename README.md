@@ -320,4 +320,4 @@ I can get the deleted commits information of `996643b` by `> git show 996643b` o
 
 # Git revert
 
-`> git revert <SHA>` is to revert the change made by the commit with the exact opposite of the that commit and then automatically commits this reverted commit to the repository
+`> git revert <SHA>` is to revert the change made by the commit with the exact opposite of the that commit and then automatically commits this reverted commit to the repository. It doesn't remove the commit but add a new commit reverting the changes of the old commit so the history is still preserved.
