@@ -261,7 +261,7 @@ insted use the `> git checkout HEAD laptops.txt` to checkout only one file from 
 
 # Amend commit
 
-I want to add `macbook air` into the laptops list, so I added it and commited it, but according to the convention of my project, I need to add specificaton while I commit,so I created a new file with `macbook air` in the specifications folder and statged it. Now I have the option to commit, But if I do git will create two commits, but what I need is one commit. So I need to amend my previous commit to add new data and also update the commit message to reflect the new changes. So git will create a new object and update the master branch reference to the new commit and the old commit will be garbage collected.
+I want to add `macbook air` into the laptops list, so I added it and commited it, but according to the convention of my project, I need to add specificaton while I commit,so I created a new file with `macbook air` in the specifications folder and statged it. Now I have the option to commit, But if I do git will create two commits, but what I need is one commit. So I need to amend my previous commit to add new data and **also update the commit message** to reflect the new changes. So git will create a new object and update the master branch reference to the new commit and the old commit will be garbage collected.
 
 `> git commit --amend`
 
