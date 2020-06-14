@@ -269,12 +269,14 @@ I want to add `macbook air` into the laptops list, so I added it and commited it
 
 Its always a golden rule to only fix history for the commits that are not pushed to shared repository
 
-Step 1 : Add a dummy line `dummy line` to the readme file
-Step 2 : Add a new line to be commited
-Step 3 : Oen interactive rebase
+Step 1 : Add information to readme file with a good commit message
+Step 2 : Add more information to the readme file thatwas supposed to go with the previous commit
+Step 3 : Add another new commit by adding some information to readme file
+Step 4 : Add a dummy line `dummy line` to the readme file
+Step 5 : Oen interactive rebase to fix the history
 `> git rebase -i`
 
-Git will open up the inteactive commands for us, so we can change the commands fot it to run
+Git will open up the inteactive commands for us, so we can change the commands for it to run
 
 | Original | Changed|
 |----------|---------|
@@ -289,3 +291,28 @@ so the end result will be
 cf87bbc (HEAD -> master) open an interactive rebase
 8e2a358 fixing history
 8ce7033 (origin/master, origin/HEAD) use bold to signify
+
+# Git Reflog
+
+We discussed earlier that the non referenced objects are garbage collected eventually. But before its garbage collected how can we retreive the objects back if we dont know theie <SHA>. Thanks to the reflog command 
+
+`> git reflog HEAD` tracks all the changes happened to the HEAD. So using the stating few letters of the <SHA> that is tracked in reflog we can still get our objects back
+**Example**
+ba818dd (HEAD -> master) HEAD@{0}: commit (amend): fixing history explained
+033bcb2 (origin/master, origin/HEAD) HEAD@{1}: commit: fixing history explained
+cf87bbc HEAD@{2}: rebase -i (finish): returning to refs/heads/master
+cf87bbc HEAD@{3}: rebase -i (pick): open an interactive rebase
+8e2a358 HEAD@{4}: rebase -i (squash): fixing history
+6f2a7e7 HEAD@{5}: rebase -i (start): checkout refs/remotes/origin/master
+**996643b HEAD@{6}: commit: add dummy line**
+dc7f83c HEAD@{7}: commit: open an interactive rebase
+80f67a6 HEAD@{8}: commit: add extta line
+6f2a7e7 HEAD@{9}: commit: fixing history
+8ce7033 HEAD@{10}: commit: use bold to signify
+
+I can get the deleted commits information of `996643b` by `> git show 996643b` or `> git show HEAD@{6}`. If you dont want this to ge garbage collected, then checkout this commit and put a label or branch on it.
+
+![Deleted Commit Info](https://github.com/inianantony/git_knowledge/blob/master/images/git_reflog.png?raw=true)
+
+`> git reflog refs/heads/master` tracks all the changes happened to the master branch
+
