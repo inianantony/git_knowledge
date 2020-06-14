@@ -298,17 +298,17 @@ We discussed earlier that the non referenced objects are garbage collected event
 
 `> git reflog HEAD` tracks all the changes happened to the HEAD. So using the stating few letters of the <SHA> that is tracked in reflog we can still get our objects back
 **Example**
-ba818dd (HEAD -> master) HEAD@{0}: commit (amend): fixing history explained
-033bcb2 (origin/master, origin/HEAD) HEAD@{1}: commit: fixing history explained
-cf87bbc HEAD@{2}: rebase -i (finish): returning to refs/heads/master
-cf87bbc HEAD@{3}: rebase -i (pick): open an interactive rebase
-8e2a358 HEAD@{4}: rebase -i (squash): fixing history
-6f2a7e7 HEAD@{5}: rebase -i (start): checkout refs/remotes/origin/master
-**996643b HEAD@{6}: commit: add dummy line**
-dc7f83c HEAD@{7}: commit: open an interactive rebase
-80f67a6 HEAD@{8}: commit: add extta line
-6f2a7e7 HEAD@{9}: commit: fixing history
-8ce7033 HEAD@{10}: commit: use bold to signify
+- ba818dd (HEAD -> master) HEAD@{0}: commit (amend): fixing history explained
+- 033bcb2 (origin/master, origin/HEAD) HEAD@{1}: commit: fixing history explained
+- cf87bbc HEAD@{2}: rebase -i (finish): returning to refs/heads/master
+- cf87bbc HEAD@{3}: rebase -i (pick): open an interactive rebase
+- 8e2a358 HEAD@{4}: rebase -i (squash): fixing history
+- 6f2a7e7 HEAD@{5}: rebase -i (start): checkout refs/remotes/origin/master
+- **996643b HEAD@{6}: commit: add dummy line**
+- dc7f83c HEAD@{7}: commit: open an interactive rebase
+- 80f67a6 HEAD@{8}: commit: add extta line
+- 6f2a7e7 HEAD@{9}: commit: fixing history
+- 8ce7033 HEAD@{10}: commit: use bold to signify
 
 I can get the deleted commits information of `996643b` by `> git show 996643b` or `> git show HEAD@{6}`. If you dont want this to ge garbage collected, then checkout this commit and put a label or branch on it.
 
