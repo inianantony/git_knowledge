@@ -275,8 +275,8 @@ Step 1 : Add information to readme file with a good commit message
 Step 2 : Add more information to the readme file that was supposed to go with the previous commit
 Step 3 : Add another new commit by adding some information to readme file
 Step 4 : Add a dummy line `dummy line` to the readme file
-Step 5 : Oen interactive rebase to fix the history
-`> git rebase -i`
+Step 5 : Open interactive rebase to fix the history by passing the argument from where git should fix the history
+`> git rebase -i HEAD~2`
 
 Git will open up the interactive commands for us, so we can change the commands for it to run
 
