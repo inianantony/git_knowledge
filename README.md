@@ -90,3 +90,7 @@ do a `> git merge microsoft` git merges the changes and then automatically does 
 if we cat-file the latest commit, it has two parents.
 
 ![Two parents](https://github.com/inianantony/git_knowledge/blob/master/images/git_cat_file_merged_commit.png?raw=true)
+
+# Git revert
+
+`> git revert <SHA>` is to revert the change made by the commit with the exact opposite of the that commit and then automatically commits this reverted commit to the repository
